@@ -46632,10 +46632,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+    props: {
+        today: {
+            type: String,
+            default: '',
+            required: false
+        }
+    },
     data: function data() {
         return {
             startTime: {
-                time: ''
+                time: this.today
             },
             endtime: {
                 time: ''
